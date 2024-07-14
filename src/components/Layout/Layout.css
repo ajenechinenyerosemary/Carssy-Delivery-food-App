@@ -1,0 +1,135 @@
+.Layout {
+  position: relative;
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: black; */
+  z-index: 10;
+  /* margin-top: 20px; */
+}
+
+.Layout .logo {
+  width: 100px;
+  height: auto;
+  margin-top: 10px; 
+}
+
+.layout-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+.layout-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.layout-right img {
+  width: 35px;
+  height: auto; 
+  cursor: pointer;
+}
+
+.Layout button {
+  background: transparent;
+  font-size: 15px;
+  color: black;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.Layout button:hover {
+  background-color: orangered;
+  color: white;
+  border-color: white;
+}
+
+.layout-menu .active {
+  font-weight: bold;
+  color: orangered;
+  padding-bottom: 2px;
+  border-bottom: 2px solid orangered;
+}
+
+.layout-menu a {
+  text-decoration: none;
+  color: inherit; /* Ensures the color is inherited, but you can set a specific color if needed */
+}
+
+.layout-menu a.active {
+  font-weight: bold;
+  color: orangered; /* This is for the active link */
+}
+
+
+.Layout li {
+  cursor: pointer;
+}
+
+.layout-search-icon {
+  position: relative;
+}
+
+.layout-search-icon .dot {
+  position: absolute;
+  min-width: 5px;
+  min-height: 5px;
+  background-color: tomato;
+  border-radius: 5px;
+  top: -5px;
+  right: 8px;
+}
+
+@media (max-width: 1050px) {
+  .Layout .logo {
+    width: 120px;
+  }
+  .layout-menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+  .layout-right {
+    gap: 30px;
+  }
+  .layout-right img {
+    width: 25px; 
+  }
+  .Layout button {
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Layout .logo {
+    width: 100px; 
+  }
+  .layout-menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+  .layout-right {
+    gap: 20px;
+  }
+  .layout-right img {
+    width: 20px; 
+  }
+  .Layout button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .layout-menu {
+    display: none;
+  }
+}

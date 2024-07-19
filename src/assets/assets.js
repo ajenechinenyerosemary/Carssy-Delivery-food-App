@@ -32,8 +32,52 @@ import play_store from './play_store.png';
 import apple_store from './apple_store.png';
 import cross_icon from './cross_icon.png';
 import UpArrow_icon from './UpArrow_icon.png';
+import ElixirLounge from './ElixirLounge.png';
+import SpringRoll from './SpringRoll.jpg';
+import MiniChops from './MiniChops.jpg';
+import Grilledsausage from './Grilledsausage.jpg';
+import Asun from './Asun.jpg';
+import Ada_logo from './Ada_logo.jpg';
+import Ada_Header_image from './Ada_Header_image.jpg';
+import Header_image from './Header_image.jpg';
+import akassa_header_image from './akassa_header_image.jpg';
+import Akassa_logo from './Akassa_logo.jpg';
+import BEEF from './BEEF.jpg';
+import chicken from './chicken.jpg';
+import croaker_fish from './croaker_fish.jpg';
+import eba from './eba.jpg';
+import efo from './efo.jpg';
+import Fried_Rice from './Fried_Rice.jpg';
+import gizzard from './gizzard.jpg';
+import Jellof_rice from './Jellof_rice.jpg';
+import pomo from './pomo.jpg';
+import porriade_beans from './porriade_beans.jpg';
+import Porridage_Yam from './Porridage_Yam.jpg';
+import titus_fish_n_Beans from './titus_fish_n_Beans.jpg';
+import turkey from './turkey.jpg';
+import wheat_n_egusi from './wheat_n_egusi.jpg';
+import White_rice from './White_rice.jpg';
+import Avacado_toast from './Avacado_toast.png';
+import Blue_night from './Blue_night.jpg';
+import Chicken_parmigiana from './Chicken_parmigiana.png';
+import Crispy_golden_prawns from './Crispy_golden_prawns.png';
+import lobster_thermido from './lobster_thermido.png';
+import patatas_Bravas from './patatas_Bravas.png';
+import Pink_Lady from './Pink_Lady.png';
+import Vanilla_Header_image from './Vanilla_Header_image.jpg';
+import Vanillamoon_logo from './Vanillamoon_logo.png';
+import Vegetable_biryani from './Vegetable_biryani.jpg';
+import master_card from './master_card.png';
+import unionpay_icon from './unionpay_icon.png';
+import visa_icon from './visa_icon.png';
+
+
+
 
 const assets = {
+  visa_icon,
+  master_card,
+  unionpay_icon,
   logo,
   facebook_icon,
   Gmail_icon,
@@ -68,6 +112,41 @@ const assets = {
   play_store,
   cross_icon,
   UpArrow_icon,
+  ElixirLounge,
+  Header_image,
+  Ada_Header_image,
+  Ada_logo,
+  Asun,
+  Grilledsausage,
+  MiniChops,
+  SpringRoll,
+  akassa_header_image,
+  Akassa_logo,
+  BEEF,
+  chicken,
+  croaker_fish,
+  eba,
+  efo,
+  Fried_Rice,
+  gizzard,
+  Jellof_rice,
+  pomo,
+  porriade_beans,
+  Porridage_Yam,
+  titus_fish_n_Beans,
+  turkey,
+  wheat_n_egusi,
+  White_rice,
+  Vanillamoon_logo,
+  Avacado_toast,
+  Blue_night,
+  Chicken_parmigiana,
+  Crispy_golden_prawns,
+  lobster_thermido,
+  patatas_Bravas,
+  Pink_Lady,
+  Vanilla_Header_image,
+  Vegetable_biryani,
 };
 
 export const menu_list = [

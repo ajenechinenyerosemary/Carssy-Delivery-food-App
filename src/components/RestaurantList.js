@@ -1,7 +1,6 @@
-// File: src/components/RestaurantList.js
 import React, { useEffect, useState } from 'react';
-import { fetchRestaurants } from '../api/api'; // Ensure the path is correct
-import axios from 'axios'; // Import axios
+import { fetchRestaurants } from '../api/api';
+import axios from 'axios'; 
 
 
 const API_URL = 'http://127.0.0.1:8000/api';

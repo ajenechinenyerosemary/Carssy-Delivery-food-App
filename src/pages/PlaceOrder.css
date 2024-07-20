@@ -128,7 +128,7 @@ input {
 }
 
 .credit-claim input[type='checkbox'] {
-  margin-left: -210px;
+  margin-left: -180px;
 }
 
 .credit-claim label {
@@ -289,7 +289,17 @@ button:hover {
     width: 100%;
     padding: 15px;
   }
+
+  .credit-claim input[type='checkbox'] {
+    margin-left: -160px;
+  }
+  
+  .credit-claim label {
+    margin-left: -170px;
+  }
+  
 }
+
 
 /* Footer Styling */
 .footer {

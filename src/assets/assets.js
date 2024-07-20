@@ -70,11 +70,14 @@ import Vegetable_biryani from './Vegetable_biryani.jpg';
 import master_card from './master_card.png';
 import unionpay_icon from './unionpay_icon.png';
 import visa_icon from './visa_icon.png';
+import harmburger_menu from './harmburger_menu.png';
+
 
 
 
 
 const assets = {
+  harmburger_menu,
   visa_icon,
   master_card,
   unionpay_icon,

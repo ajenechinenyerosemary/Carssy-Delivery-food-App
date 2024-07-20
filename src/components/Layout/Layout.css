@@ -1,442 +1,186 @@
-/* .Layout {
-  position: relative;
-  width: 100%;
-  padding: 0px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-}
-
-.Layout .logo {
-  width: 100px;
-  height: auto;
-  margin-top: 10px;
-}
-
-.layout-menu {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  color: black;
-  font-size: 20px;
-  flex-grow: 1;
-  justify-content: center;
-}
-
-
-.layout-menu a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.layout-menu a.active {
-  font-weight: bold;
-  color: orangered;
-}
-
-.layout-menu .active {
-  font-weight: bold;
-  color: orangered;
-  padding-bottom: 2px;
-  border-bottom: 2px solid orangered;
-}
-
-.layout-right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.layout-right img {
-  width: 35px;
-  height: auto;
-  cursor: pointer;
-}
-
-.Layout button {
-  background: transparent;
-  font-size: 15px;
-  color: black;
-  border: 1px solid black;
-  padding: 5px 10px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.Layout button:hover {
-  background-color: orangered;
-  color: white;
-  border-color: white;
-}
-
-.layout-search-icon {
-  position: relative;
-}
-
-.layout-search-icon .dot {
-  position: absolute;
-  min-width: 5px;
-  min-height: 5px;
-  background-color: tomato;
-  border-radius: 5px;
-  top: -5px;
-  right: 8px;
-}
-
-@media (max-width: 1050px) {
-  .Layout .logo {
-    width: 120px;
-  }
-  .layout-menu {
-    gap: 20px;
-    font-size: 17px;
-  }
-  .layout-right {
-    gap: 30px;
-  }
-  .layout-right img {
-    width: 25px;
-  }
-  .Layout button {
-    padding: 8px 25px;
-  }
-}
-
-@media (max-width: 900px) {
-  .Layout .logo {
-    width: 100px;
-  }
-  .layout-menu {
-    gap: 15px;
-    font-size: 16px;
-  }
-  .layout-right {
-    gap: 20px;
-  }
-  .layout-right img {
-    width: 20px;
-  }
-  .Layout button {
-    padding: 7px 20px;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 750px) {
-  .layout-menu {
-    display: none;
-  }
-}
-
-
-.layout-content {
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-}
-
-.add-restaurant-form {
-  width: 400px;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.add-restaurant-form h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #333;
-  text-align: center;
-}
-
-.add-restaurant-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #333;
-}
-
-.add-restaurant-form input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.add-restaurant-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: orangered;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
-}
-
-.add-restaurant-form button:hover {
-  background-color: darkred;
-}
-
-.add-restaurant-form .login-link {
-  display: block;
-  text-align: center;
-  margin-top: 15px;
-  color: #333;
-}
-
-.add-restaurant-form .login-link a {
-  color: orangered;
-  text-decoration: none;
-}
-
-.add-restaurant-form .login-link a:hover {
-  text-decoration: underline;
-}
- */
-
-
 .Layout {
-  position: relative;
-  width: 100%;
-  padding: 0px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: black; */
-  z-index: 10;
-  /* margin-top: 20px; */
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.Layout .logo {
+.layout-left {
+  flex: 0 0 auto;
+}
+
+.layout-left .logo {
   width: 100px;
   height: auto;
-  margin-top: 10px; 
+}
+
+.layout-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .layout-menu {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.layout-menu li a {
+  text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.layout-menu li a:hover,
+.layout-menu li a.active {
+  color: orangered;
 }
 
 .layout-right {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
-.layout-right img {
-  width: 35px;
-  height: auto; 
-  cursor: pointer;
-}
-
-.Layout button {
-  background: transparent;
-  font-size: 15px;
-  color: black;
-  border: 1px solid black;
-  padding: 5px 10px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.Layout button:hover {
-  background-color: orangered;
-  color: white;
-  border-color: white;
-}
-
-.layout-menu .active {
-  font-weight: bold;
-  color: orangered;
-  padding-bottom: 2px;
-  border-bottom: 2px solid orangered;
-}
-
-.layout-menu a {
-  text-decoration: none;
-  color: inherit; 
-}
-
-.layout-menu a.active {
-  font-weight: bold;
-  color: orangered; 
-}
-
-
-.Layout li {
-  cursor: pointer;
-}
-
-.layout-search-icon {
+.basket-link {
   position: relative;
 }
 
-.layout-search-icon .dot {
+.basket_icon {
+  width: 30px;
+  height: auto;
+}
+
+.dot {
   position: absolute;
-  min-width: 5px;
-  min-height: 5px;
-  background-color: tomato;
-  border-radius: 5px;
   top: -5px;
-  right: 8px;
-}
-
-
-/* AddRestaurant form styling */
-/* .layout-content {
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-} */
-
-.layout-content {
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* .add-restaurant-form {
-  width: 400px;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
-/* .add-restaurant-form {
-  max-width: 600px;
-  width: 100%;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0 auto; /* This centers the form */
-/* } */
-
-.add-restaurant-form {
-  max-width: 600px;
-  width: 100%;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-}
-.add-restaurant-form h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #333;
-  text-align: center;
-}
-
-.add-restaurant-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #333;
-}
-
-.add-restaurant-form input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.add-restaurant-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
-}
-
-.add-restaurant-form button:hover {
+  right: -5px;
+  width: 10px;
+  height: 10px;
   background-color: orangered;
+  border-radius: 50%;
 }
 
-.add-restaurant-form .login-link {
-  display: block;
-  text-align: center;
-  margin-top: 15px;
-  color: #333;
+.layout-right button {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.add-restaurant-form .login-link a {
-  color: orangered;
+.layout-right button:hover {
+  background-color: orangered;
+  color: white;
+  border-color: orangered;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  transition: right 0.3s;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.close-icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.sidebar-basket-link {
+  display: none;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 15px 20px;
+}
+
+.sidebar-menu li a {
   text-decoration: none;
+  color: black;
+  font-size: 18px;
 }
 
-.add-restaurant-form .login-link a:hover {
-  text-decoration: underline;
-}
-
-
-@media (max-width: 1050px) {
-  .Layout .logo {
-    width: 120px;
-  }
-  .layout-menu {
-    gap: 20px;
-    font-size: 17px;
-  }
-  .layout-right {
-    gap: 30px;
-  }
-  .layout-right img {
-    width: 25px; 
-  }
-  .Layout button {
-    padding: 8px 25px;
-  }
-}
-
-@media (max-width: 900px) {
-  .Layout .logo {
-    width: 100px; 
-  }
-  .layout-menu {
-    gap: 15px;
-    font-size: 16px;
-  }
-  .layout-right {
-    gap: 20px;
-  }
-  .layout-right img {
-    width: 20px; 
-  }
-  .Layout button {
-    padding: 7px 20px;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 750px) {
-  .layout-menu {
+@media (max-width: 768px) {
+  .layout-center {
     display: none;
   }
-}
-@media (max-width: 650px) {
-  .add-restaurant-form {
-    max-width: 100%;
+  
+  .layout-right .basket-link,
+  .layout-right button {
+    display: none;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  .sidebar-basket-link {
+    display: block;
+  }
+  
+  .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-menu .sign-in-button {
+    margin-top: 20px;
+  }
+  
+  .sidebar-menu .sign-in-button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .sidebar-menu .sign-in-button button:hover {
+    background-color: orangered;
+    color: white;
+    border-color: orangered;
   }
 }

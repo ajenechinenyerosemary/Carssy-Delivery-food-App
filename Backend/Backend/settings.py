@@ -36,14 +36,17 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    # 'user',
+    'django.contrib.staticfiles', 
+    'user',
     'restaurants',
-    # 'order',
+    'order',
     'corsheaders',
     'rest_framework', 
     # 'django.contrib.staticfiles',
 ]
+
+# Add this line to your settings.py file
+AUTH_USER_MODEL = 'user.CustomUser'
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',

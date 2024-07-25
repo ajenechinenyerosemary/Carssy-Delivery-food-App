@@ -1,0 +1,41 @@
+HowItWork.css
+.how-it-work {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .how-it-work h1 {
+    font-size: 2rem;
+    margin-top: -100px;
+  }
+  
+  .how-it-work h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .steps {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 20px; 
+  }
+  
+  .step-container {
+    flex: 1; 
+    max-width: 300px; 
+    padding: 10px;
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .step-container p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .step-container strong {
+    font-weight: bold;
+  }
+  

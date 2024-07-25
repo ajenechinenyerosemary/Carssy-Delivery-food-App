@@ -24,13 +24,13 @@ const Layout = ({ setShowLogin }) => {
             <Link to="/" onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Home</Link>
           </li>
           <li>
+            <Link to="/how-it-work" onClick={() => setMenu("howitwork")} className={menu === "howitwork" ? "active" : ""}>How It Works</Link>
+          </li>
+          <li>
             <Link to="/explore-menu" onClick={() => setMenu("menu")} className={menu === "menu" ? "active" : ""}>Menu</Link>
           </li>
           <li>
             <a href="#footer" onClick={() => setMenu("contact-us")} className={menu === "contact-us" ? "active" : ""}>Contact Us</a>
-          </li>
-          <li>
-            <Link to="/addrestaurant" onClick={() => setMenu("add-restaurant")} className={menu === "add-restaurant" ? "active" : ""}>Add Restaurant</Link>
           </li>
         </ul>
       </div>
@@ -55,6 +55,9 @@ const Layout = ({ setShowLogin }) => {
             <Link to="/" onClick={() => { setMenu("home"); toggleSidebar(); }} className={menu === "home" ? "active" : ""}>Home</Link>
           </li>
           <li>
+            <Link to="/about" onClick={() => { setMenu("about"); toggleSidebar(); }} className={menu === "about" ? "active" : ""}>ABOUT US</Link>
+          </li>
+          <li>
             <Link to="/explore-menu" onClick={() => { setMenu("menu"); toggleSidebar(); }} className={menu === "menu" ? "active" : ""}>Menu</Link>
           </li>
           <li>
@@ -73,3 +76,4 @@ const Layout = ({ setShowLogin }) => {
 };
 
 export default Layout;
+

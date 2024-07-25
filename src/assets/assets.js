@@ -71,6 +71,7 @@ import master_card from './master_card.png';
 import unionpay_icon from './unionpay_icon.png';
 import visa_icon from './visa_icon.png';
 import harmburger_menu from './harmburger_menu.png';
+import driver from './driver.png';
 
 
 
@@ -150,6 +151,7 @@ const assets = {
   Pink_Lady,
   Vanilla_Header_image,
   Vegetable_biryani,
+  driver,
 };
 
 export const menu_list = [

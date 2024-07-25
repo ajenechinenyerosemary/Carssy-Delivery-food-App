@@ -1,4 +1,3 @@
-
 import React, { useContext, useState } from 'react';
 import { StoreContext } from '../components/Context/StoreContext';
 import assets from '../assets/assets';

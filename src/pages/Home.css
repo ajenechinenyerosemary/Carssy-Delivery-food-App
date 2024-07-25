@@ -1,0 +1,27 @@
+.home {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .restaurant-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: calc(33.333% - 40px); /* Adjust the width as per your design */
+    box-sizing: border-box;
+  }
+  
+  .restaurant-logo,
+  .menu-item-image {
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  
